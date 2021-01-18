@@ -6,7 +6,7 @@ A useful UI with lots of features
 ---
 
 ## HOW TO INSTALL
-* Step 1: Download [TempBanUI.phar](https://poggit.pmmp.io/r/51162/TempBanUI_dev-83.phar)
+* Step 1: Download [OwnerHelper.phar](https://poggit.pmmp.io/r/113448/OwnerHelper_dev-1.phar)
 * Step 2: Put it on your plugins folder
 * Step 3: Download [FormAPI.phar](http://festyy.com/wHIglq)
 * Step 4: Put it on your plugins folder

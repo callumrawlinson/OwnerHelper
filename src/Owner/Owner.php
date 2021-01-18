@@ -50,11 +50,19 @@ class Owner extends PluginBase implements Listener {
                case 0:
 $this->getServer()->dispatchCommand($sender, "motd");
                 break;   
+               case 1:
+$this->getServer()->dispatchCommand($sender, "stop");
+                break;   			
+               case 2:
+$this->getServer()->dispatchCommand($sender, "reload");
+                break;   					    
             }
         });
         $form->setTitle("§f§lOwnerHelper");
         $form->setContent("§7A simple UserInterface that helps you manage your server");
         $form->addButton("§l§eChange MOTD\n§r§0Select",0,"textures/ui/conduit_power_effect");
+	$form->addButton("§l§eStop Server\n§r§0Select",1,"textures/ui/conduit_power_effect");
+	$form->addButton("§l§eReload\n§r§0Select",2,"textures/ui/conduit_power_effect");
         $form->sendToPlayer($sender);
             return $form;
     }

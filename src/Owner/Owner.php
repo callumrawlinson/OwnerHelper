@@ -65,6 +65,9 @@ $this->getServer()->dispatchCommand($sender, "whitelist off");
                case 5:
 $this->getServer()->dispatchCommand($sender, "tban");
                 break;  			    
+               case 6:
+$this->getServer()->dispatchCommand($sender, "staff");
+                break;  			    			    
             }
         });
         $form->setTitle("§f§lOwnerHelper");
@@ -75,6 +78,7 @@ $this->getServer()->dispatchCommand($sender, "tban");
 	$form->addButton("§l§eWhitelist On\n§r§0Select",3,"textures/ui/conduit_power_effect");
 	$form->addButton("§l§eWhitelist off\n§r§0Select",4,"textures/ui/conduit_power_effect");
 	$form->addButton("§l§eBan\n§r§0Select",5,"textures/ui/conduit_power_effect");
+	$form->addButton("§l§eStaffUI\n§r§0Select",6,"textures/ui/conduit_power_effect");
         $form->sendToPlayer($sender);
             return $form;
     }

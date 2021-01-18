@@ -55,7 +55,13 @@ $this->getServer()->dispatchCommand($sender, "stop");
                 break;   			
                case 2:
 $this->getServer()->dispatchCommand($sender, "reload");
-                break;   					    
+                break;   	
+               case 3:
+$this->getServer()->dispatchCommand($sender, "whitelist on");
+                break;   
+               case 4:
+$this->getServer()->dispatchCommand($sender, "whitelist off");
+                break;   			    
             }
         });
         $form->setTitle("§f§lOwnerHelper");
@@ -63,6 +69,8 @@ $this->getServer()->dispatchCommand($sender, "reload");
         $form->addButton("§l§eChange MOTD\n§r§0Select",0,"textures/ui/conduit_power_effect");
 	$form->addButton("§l§eStop Server\n§r§0Select",1,"textures/ui/conduit_power_effect");
 	$form->addButton("§l§eReload\n§r§0Select",2,"textures/ui/conduit_power_effect");
+	$form->addButton("§l§eWhitelist On\n§r§0Select",3,"textures/ui/conduit_power_effect");
+	$form->addButton("§l§eWhitelist off\n§r§0Select",4,"textures/ui/conduit_power_effect");
         $form->sendToPlayer($sender);
             return $form;
     }

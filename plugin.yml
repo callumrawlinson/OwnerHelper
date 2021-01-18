@@ -1,0 +1,12 @@
+name: OwnerHelper
+main: Owner\Owner
+api: 3.0.0
+version: 0.1
+author: Callum
+
+commands:
+ ohelp:
+  description: "Opens the Owner Helper ui"
+permissions:
+  owner.command:
+    default: op
